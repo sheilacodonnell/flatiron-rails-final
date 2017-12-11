@@ -7,6 +7,8 @@ Rails.application.routes.draw do
     	end
     end
   end
+
+  root "projects#index"
 end
 
 # patch is the http request
