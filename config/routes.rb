@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
 
+  devise_for :users
   resources :projects do
     resources :tasks do
     	member do
@@ -8,7 +9,7 @@ Rails.application.routes.draw do
     end
   end
 
-  root "projects#index"
+  root "application#index"
 end
 
 # patch is the http request
